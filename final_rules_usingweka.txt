@@ -1,0 +1,72 @@
+Humidity3pm = 9 AND
+RainToday = 1 AND
+Pressure3pm = 6: 1 (1035.0/192.0)
+
+Pressure3pm = 7 AND
+RainToday = 0 AND
+Humidity3pm = 7: 0 (1289.0/364.0)
+
+RainToday = 1 AND
+Pressure3pm = 1 AND
+Humidity3pm = 7: 1 (201.0/51.0)
+
+Pressure3pm = 0 AND
+Humidity3pm = 4 AND
+WindSpeed9am = 2: 1 (27.0/12.0)
+
+Humidity3pm = 4 AND
+WindSpeed9am = 3 AND
+RainToday = 0: 0 (99.0/48.0)
+
+Humidity3pm = 8 AND
+Pressure3pm = 1: 1 (94.0/20.0)
+
+WindSpeed9am = 0 AND
+Pressure3pm = 6 AND
+RainToday = 1: 0 (121.0/59.0)
+
+Pressure3pm = 1 AND
+RainToday = 1: 1 (106.0/40.0)
+
+Pressure3pm = 7 AND
+RainToday = 0 AND
+Humidity3pm = 7: 0 (1289.0/364.0)
+
+
+
+WindSpeed9am = 2 AND
+Pressure3pm = 6 AND
+RainToday = 1: 0 (307.0/138.0)
+
+
+WindSpeed9am = 5 AND
+RainToday = 0: 1 (31.0/10.0)
+
+
+WindSpeed9am = 4 AND
+Pressure3pm = 7 AND
+RainToday = 1: 1 (89.0/34.0)
+
+
+
+Pressure3pm = 8 AND
+WindSpeed9am = 2: 0 (243.0/103.0)
+
+WindSpeed9am = 2 AND
+Pressure3pm = 6 AND
+RainToday = 1: 0 (307.0/138.0)
+
+
+
+Pressure3pm = 9 AND
+Humidity3pm = 6: 0 (315.0/87.0)
+
+RainToday = 0 AND
+Humidity3pm = 5 AND
+WindSpeed9am = 1: 0 (247.0/93.0)
+
+
+
+
+
+
