@@ -1,0 +1,69 @@
+[System]
+Name='Rain_prediction'
+Type='mamdani'
+Version=2.0
+NumInputs=4
+NumOutputs=1
+NumRules=16
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='RainToday'
+Range=[0 1]
+NumMFs=2
+MF1='no':'trimf',[-0.318 -0.000958 0.598659003831418]
+MF2='yes':'trapmf',[0.403256704980843 0.708 0.999 1.16]
+
+[Input2]
+Name='WindSpeed9am'
+Range=[0 10]
+NumMFs=3
+MF1='low':'trapmf',[-3.86 -0.531 2.8639846743295 4.53]
+MF2='midium':'trimf',[3.96 5.94827586206897 7.98]
+MF3='high':'trimf',[7.02107279693486 10 14.2]
+
+[Input3]
+Name='Humidity'
+Range=[0 10]
+NumMFs=3
+MF1='low':'trimf',[-6.42616858237548 -0.92956858237548 1.91383141762452]
+MF2='midium':'trimf',[1.92590038314176 4.33890038314176 7.21590038314176]
+MF3='high':'trapmf',[5.51 7.059 10.4 13.8]
+
+[Input4]
+Name='Pressure3pm'
+Range=[0 10]
+NumMFs=4
+MF1='low':'trapmf',[-3.528 -2.021 2.252 3.972]
+MF2='midium':'trimf',[2.08 4.301 7.04]
+MF3='high':'trimf',[5.623 7.403 9.263]
+MF4='very_high':'trimf',[8.491 10.81 11.61]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=2
+MF1='No':'trapmf',[-0.375 -0.0417 0.2 0.596743295019157]
+MF2='Yes':'trapmf',[0.399 0.654 1.00862068965517 1.07]
+
+[Rules]
+2 0 3 3, 2 (1) : 1
+1 0 3 3, 1 (1) : 1
+2 0 3 1, 2 (1) : 1
+0 1 2 1, 2 (1) : 1
+1 1 2 0, 1 (1) : 1
+0 0 3 1, 2 (1) : 1
+1 1 0 3, 1 (1) : 1
+2 0 0 2, 2 (1) : 1
+1 0 3 3, 1 (1) : 1
+2 1 0 3, 1 (1) : 1
+1 2 0 0, 2 (1) : 1
+2 2 0 3, 2 (1) : 1
+0 1 0 4, 1 (1) : 1
+0 0 3 4, 1 (1) : 1
+1 1 2 0, 1 (1) : 1
+2 1 0 3, 1 (1) : 1
